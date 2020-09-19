@@ -34,7 +34,7 @@ pipeline {
 			steps {
 				withAWS(region:'us-west-2', credentials:'jenkins') {
 					sh '''
-						kubectl config use-context arn:aws:iam::088990380082:role/eksctl-udacitycapstonecluster-cluster-ServiceRole-1MW1L4XYOEI0M
+						kubectl config use-context arn:aws:eks:us-west-2:088990380082:cluster/udacitycapstonecluster
 					'''
 				}
 			}
